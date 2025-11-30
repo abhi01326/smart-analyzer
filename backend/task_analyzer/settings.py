@@ -1,5 +1,8 @@
 import os
 from pathlib import Path
+ALLOWED_HOSTS = ["*", "your-render-domain.onrender.com"]
+
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
