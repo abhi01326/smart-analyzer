@@ -1,6 +1,11 @@
 import os
 from pathlib import Path
-ALLOWED_HOSTS = ["*", "your-render-domain.onrender.com"]
+
+ALLOWED_HOSTS = [
+    "*",
+    os.environ.get("RENDER_EXTERNAL_HOSTNAME", "")
+]
+
 
 
 

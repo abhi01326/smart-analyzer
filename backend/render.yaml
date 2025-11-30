@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: smart-task-backend
+    env: python
+    repo: https://github.com/abhi01326/smart-analyzer/
+    rootDir: backend
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn task_analyzer.wsgi"
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11
