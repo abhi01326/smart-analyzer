@@ -1,0 +1,133 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+.main{
+    display: flex;
+    gap: 20px;
+}
+
+@media screen and (max-width: 576px){
+    .main{
+        flex-direction: column;
+    }
+    .form{
+        width: 100%;
+    }
+    
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 260px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+}
+
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form button{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+#add-btn:hover{
+    background-color: #45a049;
+}
+
+
+.task-card {
+    background: #f3f3f3;
+    padding: 18px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.task-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+.analyzer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+#mode{
+    width: 205px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#analyze-btn{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #3b7acc;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#analyze-btn:hover{
+    background-color: #3b6ace;
+}
+
+#mode option{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.task-card > div{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    justify-content: center;
+}
+.task-info-2{
+    width: 50%;
+    align-items: flex-end;
+    float: right;
+}
+
+.task-card p{
+    margin: 5px 0;
+    color: gray;
+    font-size: 14px;
+}
+#score{
+    font-weight: lighter;
+    color: rgba(128, 128, 128, 0.623);
+    font-size: 12px;
+}
