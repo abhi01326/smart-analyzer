@@ -1,4 +1,4 @@
-const API = "http://127.0.0.1:8000/api/tasks";
+const API =  "https://smart-analyzer-8y9w.onrender.com/api/tasks";
 document.getElementById("task-form").onsubmit = async (e) => {
     e.preventDefault();
     const payload = {
